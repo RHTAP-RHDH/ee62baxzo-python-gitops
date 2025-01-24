@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: ee62baxzo-python-gitops-repository
+spec:
+  url: https://github.com/RHTAP-RHDH/ee62baxzo-python-gitops

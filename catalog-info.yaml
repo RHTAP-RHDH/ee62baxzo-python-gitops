@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: ee62baxzo-python-gitops
+  description: This is GitOps manifest for ee62baxzo-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: ee62baxzo-python
+    backstage.io/kubernetes-id: ee62baxzo-python 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: ee62baxzo-python   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:ee62baxzo-python
